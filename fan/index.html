@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        button{
+            width: 80px;
+            height: 50px;
+            background-color: black;
+            color: antiquewhite;
+            font-size: large;
+            font-weight: 600;
+            margin: 3px;
+            border-top-right-radius: 30px;
+            border-bottom-left-radius:30px ;
+            border-style: none;
+            transition: 0.3s ease-in-out;
+            margin-left:50px ;
+            &:focus{
+                background-color: bisque;
+                color: black;
+            }
+            &:active{
+                background-color: gainsboro;
+                color: blanchedalmond;
+            }
+            &:hover{
+                transform: scale(150%);
+              border:2px solid blanchedalmond
+            }
+        }
+    </style>
+
+    <script src="./script.js"></script>
+
+</head>
+<body>
+    <button onclick="toggleFan()">on/off</button>
+    <button onclick="incrementSpeed()">+</button>
+    <button onclick="decrementSpeed()">-</button>
+</body>
+</html>
